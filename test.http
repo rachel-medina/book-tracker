@@ -2,6 +2,9 @@ POST http://localhost:5000/books
 Content-Type: application/json
 
 {
-  "title": "1984",
-    "author": "George Orwell"
-    }
+  "title": "Test Book",
+  "author": "Me",
+  "status": "Reading",
+  "rating": 5,
+  "notes": "Testing"
+}
