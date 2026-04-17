@@ -3,8 +3,6 @@ const cors = require("cors");
 
 const app = express();
 
-const { createBook } = require("./src/models/bookModel");
-
 let books = []; // temp storage
 
 app.use(cors());
@@ -21,7 +19,7 @@ app.get("/books", (req, res) => {
 
 // ADD a book
 app.post("/books", (req, res) => {
-    const newBook = createBook(req.body);
+    const newBook = req.body;
 
     books.push(newBook);
 
